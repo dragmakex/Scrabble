@@ -80,9 +80,9 @@
 
 
 
-            For i = 1 To 100
-                frmScrabble.lstTiles.Items.Add(arrbag(i).letter & " " & arrbag(i).v)
-            Next
+            'For i = 1 To 100
+            'frmScrabble.lstTiles.Items.Add(arrbag(i).letter & " " & arrbag(i).v)
+            'Next
 
 
         End Sub
@@ -160,24 +160,23 @@
                 low = mid + 1
             ElseIf Trim(LCase(word)) = Trim(LCase(arrwords(mid))) Then
                 pos = mid
+                MsgBox("Great job for finding:" & " " & word & "!" & " " & "Five seconds added.")
                 score = tempscore
                 lblScore.Text = score
-                MsgBox(word)
                 word = ""
                 lblWord.Text = ""
-                MsgBox("Exists!")
-                MsgBox(tempscore)
-
+                lblTime.Text = lblTime.Text + 5
                 Exit Do
 
             End If
         Loop
 
         If pos = 0 Then
-            MsgBox("Doesn't exist!")
+            MsgBox("Doesn't exist! Ten seconds deducted.", vbCritical)
             lblWord.Text = ""
             word = ""
             tempscore = 0
+            lblTime.Text = lblTime.Text - 10
         Else
             low = 1
             high = 58112
@@ -202,15 +201,15 @@
 
             dictnumitems = dictnumitems + 1
         Next i
-        lstDict.Items.Add(arrwords(1))
+        'lstDict.Items.Add(arrwords(1))
         FileClose(1)
-        Label2.Text = dictnumitems
+        'Label2.Text = dictnumitems
     End Sub
 
     Private Sub StartToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles StartToolStripMenuItem.Click
 
-        lstDict.Items.Clear()
-        lstTiles.Items.Clear()
+        'lstDict.Items.Clear()
+        'lstTiles.Items.Clear()
         Timer1.Enabled = True
         For i = 1 To 7
             arrpic(i).Visible = True
@@ -288,24 +287,45 @@
             tempscore = tempscore + 4
         ElseIf Mid(sender.imagelocation, 54, 1) = "Z" Then
             tempscore = tempscore + 10
-        ElseIf Mid(sender.imagelocation, 54, 1) = "+" Then
-            tempscore = tempscore + 0
         End If
 
+        If answer = "A" Or answer = "E" Or answer = "I" Or answer = "L" Or answer = "N" Or answer = "O" Or answer = "R" Or answer = "S" Or answer = "T" Or answer = "U" Then
+            tempscore = tempscore + 1
+        End If
+
+        If answer = "D" Or answer = "G" Then
+            tempscore = tempscore + 2
+        End If
+
+        If answer = "B" Or answer = "C" Or answer = "M" Or answer = "P" Then
+            tempscore = tempscore + 3
+        End If
+
+        If answer = "Z" Or answer = "Q" Then
+            tempscore = tempscore + 10
+        End If
+
+        If answer = "F" Or answer = "H" Or answer = "V" Or answer = "W" Or answer = "Y" Then
+            tempscore = tempscore + 4
+        End If
+
+        If answer = "J" Or answer = "X" Then
+            tempscore = tempscore + 8
+        End If
         lblScore.Text = score
     End Sub
 
     Private Sub ClearToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ClearToolStripMenuItem.Click
-        lstDict.Items.Clear()
-        lstTiles.Items.Clear()
+        'lstDict.Items.Clear()
+        'lstTiles.Items.Clear()
         For i = 1 To 7
             arrpic(i).Visible = False
         Next
         lblWord.Text = ""
-        Label2.Text = ""
+        'Label2.Text = ""
         word = ""
         Timer1.Enabled = False
-        lblTime.Text = "120"
+        lblTime.Text = "80"
         lblScore.Text = "0"
         score = 0
         tempscore = 0

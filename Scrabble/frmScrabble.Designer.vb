@@ -32,8 +32,6 @@ Partial Class frmScrabble
         Me.pic7 = New System.Windows.Forms.PictureBox()
         Me.cmdCheck = New System.Windows.Forms.Button()
         Me.lblWord = New System.Windows.Forms.Label()
-        Me.lstDict = New System.Windows.Forms.ListBox()
-        Me.lstTiles = New System.Windows.Forms.ListBox()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.GameToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.StartToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -42,7 +40,6 @@ Partial Class frmScrabble
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.lblScore = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.lbl3 = New System.Windows.Forms.Label()
         Me.lblTime = New System.Windows.Forms.Label()
@@ -60,7 +57,7 @@ Partial Class frmScrabble
         '
         'pic1
         '
-        Me.pic1.Location = New System.Drawing.Point(107, 381)
+        Me.pic1.Location = New System.Drawing.Point(28, 388)
         Me.pic1.Name = "pic1"
         Me.pic1.Size = New System.Drawing.Size(150, 150)
         Me.pic1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -69,7 +66,7 @@ Partial Class frmScrabble
         '
         'pic2
         '
-        Me.pic2.Location = New System.Drawing.Point(305, 381)
+        Me.pic2.Location = New System.Drawing.Point(208, 388)
         Me.pic2.Name = "pic2"
         Me.pic2.Size = New System.Drawing.Size(150, 150)
         Me.pic2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -78,7 +75,7 @@ Partial Class frmScrabble
         '
         'pic3
         '
-        Me.pic3.Location = New System.Drawing.Point(501, 381)
+        Me.pic3.Location = New System.Drawing.Point(397, 388)
         Me.pic3.Name = "pic3"
         Me.pic3.Size = New System.Drawing.Size(150, 150)
         Me.pic3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -87,7 +84,7 @@ Partial Class frmScrabble
         '
         'pic4
         '
-        Me.pic4.Location = New System.Drawing.Point(691, 381)
+        Me.pic4.Location = New System.Drawing.Point(587, 388)
         Me.pic4.Name = "pic4"
         Me.pic4.Size = New System.Drawing.Size(150, 150)
         Me.pic4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -96,7 +93,7 @@ Partial Class frmScrabble
         '
         'pic5
         '
-        Me.pic5.Location = New System.Drawing.Point(886, 381)
+        Me.pic5.Location = New System.Drawing.Point(772, 388)
         Me.pic5.Name = "pic5"
         Me.pic5.Size = New System.Drawing.Size(150, 150)
         Me.pic5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -105,7 +102,7 @@ Partial Class frmScrabble
         '
         'pic6
         '
-        Me.pic6.Location = New System.Drawing.Point(1080, 381)
+        Me.pic6.Location = New System.Drawing.Point(957, 388)
         Me.pic6.Name = "pic6"
         Me.pic6.Size = New System.Drawing.Size(150, 150)
         Me.pic6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -114,7 +111,7 @@ Partial Class frmScrabble
         '
         'pic7
         '
-        Me.pic7.Location = New System.Drawing.Point(1274, 381)
+        Me.pic7.Location = New System.Drawing.Point(1145, 388)
         Me.pic7.Name = "pic7"
         Me.pic7.Size = New System.Drawing.Size(150, 150)
         Me.pic7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -125,7 +122,7 @@ Partial Class frmScrabble
         '
         Me.cmdCheck.BackColor = System.Drawing.Color.DarkBlue
         Me.cmdCheck.ForeColor = System.Drawing.Color.White
-        Me.cmdCheck.Location = New System.Drawing.Point(572, 290)
+        Me.cmdCheck.Location = New System.Drawing.Point(479, 254)
         Me.cmdCheck.Name = "cmdCheck"
         Me.cmdCheck.Size = New System.Drawing.Size(366, 60)
         Me.cmdCheck.TabIndex = 7
@@ -135,31 +132,12 @@ Partial Class frmScrabble
         '
         'lblWord
         '
-        Me.lblWord.AutoSize = True
-        Me.lblWord.Font = New System.Drawing.Font("Modern No. 20", 36.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblWord.Location = New System.Drawing.Point(700, 77)
+        Me.lblWord.Font = New System.Drawing.Font("Modern No. 20", 48.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblWord.Location = New System.Drawing.Point(28, 55)
         Me.lblWord.Name = "lblWord"
-        Me.lblWord.Size = New System.Drawing.Size(0, 62)
+        Me.lblWord.Size = New System.Drawing.Size(1257, 62)
         Me.lblWord.TabIndex = 8
         Me.lblWord.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lstDict
-        '
-        Me.lstDict.FormattingEnabled = True
-        Me.lstDict.ItemHeight = 29
-        Me.lstDict.Location = New System.Drawing.Point(107, 561)
-        Me.lstDict.Name = "lstDict"
-        Me.lstDict.Size = New System.Drawing.Size(295, 178)
-        Me.lstDict.TabIndex = 9
-        '
-        'lstTiles
-        '
-        Me.lstTiles.FormattingEnabled = True
-        Me.lstTiles.ItemHeight = 29
-        Me.lstTiles.Location = New System.Drawing.Point(430, 561)
-        Me.lstTiles.Name = "lstTiles"
-        Me.lstTiles.Size = New System.Drawing.Size(289, 178)
-        Me.lstTiles.TabIndex = 10
         '
         'MenuStrip1
         '
@@ -181,32 +159,32 @@ Partial Class frmScrabble
         'StartToolStripMenuItem
         '
         Me.StartToolStripMenuItem.Name = "StartToolStripMenuItem"
-        Me.StartToolStripMenuItem.Size = New System.Drawing.Size(181, 26)
+        Me.StartToolStripMenuItem.Size = New System.Drawing.Size(171, 26)
         Me.StartToolStripMenuItem.Text = "Start"
         '
         'ClearToolStripMenuItem
         '
         Me.ClearToolStripMenuItem.Name = "ClearToolStripMenuItem"
-        Me.ClearToolStripMenuItem.Size = New System.Drawing.Size(181, 26)
+        Me.ClearToolStripMenuItem.Size = New System.Drawing.Size(171, 26)
         Me.ClearToolStripMenuItem.Text = "Clear"
         '
         'ReplaceTilesToolStripMenuItem
         '
         Me.ReplaceTilesToolStripMenuItem.Name = "ReplaceTilesToolStripMenuItem"
-        Me.ReplaceTilesToolStripMenuItem.Size = New System.Drawing.Size(181, 26)
+        Me.ReplaceTilesToolStripMenuItem.Size = New System.Drawing.Size(171, 26)
         Me.ReplaceTilesToolStripMenuItem.Text = "Replace Tiles"
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(181, 26)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(171, 26)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Modern No. 20", 19.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(880, 561)
+        Me.Label1.Location = New System.Drawing.Point(22, 587)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(293, 34)
         Me.Label1.TabIndex = 12
@@ -217,19 +195,11 @@ Partial Class frmScrabble
         '
         Me.lblScore.AutoSize = True
         Me.lblScore.Font = New System.Drawing.Font("Modern No. 20", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblScore.Location = New System.Drawing.Point(1015, 615)
+        Me.lblScore.Location = New System.Drawing.Point(135, 650)
         Me.lblScore.Name = "lblScore"
         Me.lblScore.Size = New System.Drawing.Size(31, 34)
         Me.lblScore.TabIndex = 13
         Me.lblScore.Text = "0"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(764, 580)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(0, 30)
-        Me.Label2.TabIndex = 14
         '
         'Timer1
         '
@@ -239,7 +209,7 @@ Partial Class frmScrabble
         '
         Me.lbl3.AutoSize = True
         Me.lbl3.Font = New System.Drawing.Font("Modern No. 20", 19.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl3.Location = New System.Drawing.Point(1188, 561)
+        Me.lbl3.Location = New System.Drawing.Point(362, 587)
         Me.lbl3.Name = "lbl3"
         Me.lbl3.Size = New System.Drawing.Size(245, 34)
         Me.lbl3.TabIndex = 15
@@ -248,16 +218,16 @@ Partial Class frmScrabble
         'lblTime
         '
         Me.lblTime.AutoSize = True
-        Me.lblTime.Location = New System.Drawing.Point(1269, 615)
+        Me.lblTime.Location = New System.Drawing.Point(427, 650)
         Me.lblTime.Name = "lblTime"
-        Me.lblTime.Size = New System.Drawing.Size(55, 30)
+        Me.lblTime.Size = New System.Drawing.Size(41, 30)
         Me.lblTime.TabIndex = 16
-        Me.lblTime.Text = "120"
+        Me.lblTime.Text = "80"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(1316, 614)
+        Me.Label3.Location = New System.Drawing.Point(474, 649)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(24, 30)
         Me.Label3.TabIndex = 17
@@ -277,11 +247,8 @@ Partial Class frmScrabble
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.lblTime)
         Me.Controls.Add(Me.lbl3)
-        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.lblScore)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.lstTiles)
-        Me.Controls.Add(Me.lstDict)
         Me.Controls.Add(Me.lblWord)
         Me.Controls.Add(Me.cmdCheck)
         Me.Controls.Add(Me.pic7)
@@ -320,8 +287,6 @@ Partial Class frmScrabble
     Friend WithEvents pic7 As PictureBox
     Friend WithEvents cmdCheck As Button
     Friend WithEvents lblWord As Label
-    Friend WithEvents lstDict As ListBox
-    Friend WithEvents lstTiles As ListBox
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents GameToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents StartToolStripMenuItem As ToolStripMenuItem
@@ -330,7 +295,6 @@ Partial Class frmScrabble
     Friend WithEvents ExitToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents Label1 As Label
     Friend WithEvents lblScore As Label
-    Friend WithEvents Label2 As Label
     Friend WithEvents Timer1 As Timer
     Friend WithEvents lbl3 As Label
     Friend WithEvents lblTime As Label
