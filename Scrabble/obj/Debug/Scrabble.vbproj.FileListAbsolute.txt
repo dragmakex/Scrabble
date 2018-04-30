@@ -1,0 +1,11 @@
+F:\Locker\Files\Projects\CP II\VB.NET\Scrabble\Scrabble\Scrabble\obj\Debug\Scrabble.vbprojResolveAssemblyReference.cache
+F:\Locker\Files\Projects\CP II\VB.NET\Scrabble\Scrabble\Scrabble\obj\Debug\Scrabble.frmScrabble.resources
+F:\Locker\Files\Projects\CP II\VB.NET\Scrabble\Scrabble\Scrabble\obj\Debug\Scrabble.Resources.resources
+F:\Locker\Files\Projects\CP II\VB.NET\Scrabble\Scrabble\Scrabble\obj\Debug\Scrabble.vbproj.GenerateResource.Cache
+F:\Locker\Files\Projects\CP II\VB.NET\Scrabble\Scrabble\Scrabble\bin\Debug\Scrabble.exe.config
+F:\Locker\Files\Projects\CP II\VB.NET\Scrabble\Scrabble\Scrabble\bin\Debug\Scrabble.exe
+F:\Locker\Files\Projects\CP II\VB.NET\Scrabble\Scrabble\Scrabble\bin\Debug\Scrabble.pdb
+F:\Locker\Files\Projects\CP II\VB.NET\Scrabble\Scrabble\Scrabble\bin\Debug\Scrabble.xml
+F:\Locker\Files\Projects\CP II\VB.NET\Scrabble\Scrabble\Scrabble\obj\Debug\Scrabble.exe
+F:\Locker\Files\Projects\CP II\VB.NET\Scrabble\Scrabble\Scrabble\obj\Debug\Scrabble.xml
+F:\Locker\Files\Projects\CP II\VB.NET\Scrabble\Scrabble\Scrabble\obj\Debug\Scrabble.pdb
