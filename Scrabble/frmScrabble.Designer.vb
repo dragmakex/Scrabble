@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class frmScrabble
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class frmScrabble
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.pic1 = New System.Windows.Forms.PictureBox()
@@ -75,7 +75,7 @@ Partial Class frmScrabble
         '
         'pic3
         '
-        Me.pic3.Location = New System.Drawing.Point(397, 388)
+        Me.pic3.Location = New System.Drawing.Point(396, 388)
         Me.pic3.Name = "pic3"
         Me.pic3.Size = New System.Drawing.Size(150, 150)
         Me.pic3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -84,7 +84,7 @@ Partial Class frmScrabble
         '
         'pic4
         '
-        Me.pic4.Location = New System.Drawing.Point(587, 388)
+        Me.pic4.Location = New System.Drawing.Point(577, 388)
         Me.pic4.Name = "pic4"
         Me.pic4.Size = New System.Drawing.Size(150, 150)
         Me.pic4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -93,7 +93,7 @@ Partial Class frmScrabble
         '
         'pic5
         '
-        Me.pic5.Location = New System.Drawing.Point(772, 388)
+        Me.pic5.Location = New System.Drawing.Point(928, 388)
         Me.pic5.Name = "pic5"
         Me.pic5.Size = New System.Drawing.Size(150, 150)
         Me.pic5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -102,7 +102,7 @@ Partial Class frmScrabble
         '
         'pic6
         '
-        Me.pic6.Location = New System.Drawing.Point(957, 388)
+        Me.pic6.Location = New System.Drawing.Point(754, 388)
         Me.pic6.Name = "pic6"
         Me.pic6.Size = New System.Drawing.Size(150, 150)
         Me.pic6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -111,7 +111,7 @@ Partial Class frmScrabble
         '
         'pic7
         '
-        Me.pic7.Location = New System.Drawing.Point(1145, 388)
+        Me.pic7.Location = New System.Drawing.Point(1095, 388)
         Me.pic7.Name = "pic7"
         Me.pic7.Size = New System.Drawing.Size(150, 150)
         Me.pic7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -145,7 +145,7 @@ Partial Class frmScrabble
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GameToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(1924, 28)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1284, 24)
         Me.MenuStrip1.TabIndex = 11
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -153,31 +153,31 @@ Partial Class frmScrabble
         '
         Me.GameToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.StartToolStripMenuItem, Me.ClearToolStripMenuItem, Me.ReplaceTilesToolStripMenuItem, Me.ExitToolStripMenuItem})
         Me.GameToolStripMenuItem.Name = "GameToolStripMenuItem"
-        Me.GameToolStripMenuItem.Size = New System.Drawing.Size(60, 24)
+        Me.GameToolStripMenuItem.Size = New System.Drawing.Size(50, 20)
         Me.GameToolStripMenuItem.Text = "Game"
         '
         'StartToolStripMenuItem
         '
         Me.StartToolStripMenuItem.Name = "StartToolStripMenuItem"
-        Me.StartToolStripMenuItem.Size = New System.Drawing.Size(171, 26)
+        Me.StartToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.StartToolStripMenuItem.Text = "Start"
         '
         'ClearToolStripMenuItem
         '
         Me.ClearToolStripMenuItem.Name = "ClearToolStripMenuItem"
-        Me.ClearToolStripMenuItem.Size = New System.Drawing.Size(171, 26)
+        Me.ClearToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.ClearToolStripMenuItem.Text = "Clear"
         '
         'ReplaceTilesToolStripMenuItem
         '
         Me.ReplaceTilesToolStripMenuItem.Name = "ReplaceTilesToolStripMenuItem"
-        Me.ReplaceTilesToolStripMenuItem.Size = New System.Drawing.Size(171, 26)
+        Me.ReplaceTilesToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.ReplaceTilesToolStripMenuItem.Text = "Replace Tiles"
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(171, 26)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'Label1
@@ -186,7 +186,7 @@ Partial Class frmScrabble
         Me.Label1.Font = New System.Drawing.Font("Modern No. 20", 19.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(22, 587)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(293, 34)
+        Me.Label1.Size = New System.Drawing.Size(248, 29)
         Me.Label1.TabIndex = 12
         Me.Label1.Text = "Your Current Score"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -197,7 +197,7 @@ Partial Class frmScrabble
         Me.lblScore.Font = New System.Drawing.Font("Modern No. 20", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblScore.Location = New System.Drawing.Point(135, 650)
         Me.lblScore.Name = "lblScore"
-        Me.lblScore.Size = New System.Drawing.Size(31, 34)
+        Me.lblScore.Size = New System.Drawing.Size(26, 29)
         Me.lblScore.TabIndex = 13
         Me.lblScore.Text = "0"
         '
@@ -211,7 +211,7 @@ Partial Class frmScrabble
         Me.lbl3.Font = New System.Drawing.Font("Modern No. 20", 19.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl3.Location = New System.Drawing.Point(362, 587)
         Me.lbl3.Name = "lbl3"
-        Me.lbl3.Size = New System.Drawing.Size(245, 34)
+        Me.lbl3.Size = New System.Drawing.Size(208, 29)
         Me.lbl3.TabIndex = 15
         Me.lbl3.Text = "Time remaining"
         '
@@ -220,7 +220,7 @@ Partial Class frmScrabble
         Me.lblTime.AutoSize = True
         Me.lblTime.Location = New System.Drawing.Point(427, 650)
         Me.lblTime.Name = "lblTime"
-        Me.lblTime.Size = New System.Drawing.Size(41, 30)
+        Me.lblTime.Size = New System.Drawing.Size(32, 24)
         Me.lblTime.TabIndex = 16
         Me.lblTime.Text = "80"
         '
@@ -229,7 +229,7 @@ Partial Class frmScrabble
         Me.Label3.AutoSize = True
         Me.Label3.Location = New System.Drawing.Point(474, 649)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(24, 30)
+        Me.Label3.Size = New System.Drawing.Size(19, 24)
         Me.Label3.TabIndex = 17
         Me.Label3.Text = "s"
         Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -240,10 +240,10 @@ Partial Class frmScrabble
         '
         'frmScrabble
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(16.0!, 29.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(13.0!, 24.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1924, 1055)
+        Me.ClientSize = New System.Drawing.Size(1284, 1006)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.lblTime)
         Me.Controls.Add(Me.lbl3)

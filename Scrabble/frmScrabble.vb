@@ -7,6 +7,7 @@
     Dim word As String
     Dim score As Integer
     Dim tempscore As Integer
+    Dim tilecounter As Integer
 
     Structure Tile
         Dim letter As String
@@ -18,6 +19,15 @@
 
         End Function
     End Structure
+
+    'Sub replace()
+    'For i = 1 To 7
+    'If arrpic(i).Visible = False Then
+    '    arrpic(i) = b.arrbag(tilecounter + 7)
+    'End If
+    'Next
+
+    End Sub
 
     Structure Bag
         Dim arrbag() As Tile
@@ -33,7 +43,7 @@
             Dim spacepos2 As Integer
             Dim i As Integer
             Dim c As Integer = 0
-            path = "F:\Locker\Files\Projects\CP II\VB.NET\Scrabble\Scrabble Resources\scrabblevalues.txt"
+            path = "D:\Locker\Files\Projects\CP II\VB.NET\Scrabble\Scrabble Resources\scrabblevalues.txt"
             FileOpen(1, path, OpenMode.Input)
             Do While Not EOF(1)
                 line = Trim(LineInput(1))
@@ -88,10 +98,13 @@
         End Sub
 
         Sub Deal()
+
             Dim phand(7) As Tile
             Dim path As String
-            path = "F:\Locker\Files\Projects\CP II\VB.NET\Scrabble\Tiles\"
+            path = "D:\Locker\Files\Projects\CP II\VB.NET\Scrabble\Tiles\"
             For i = 1 To 7
+                frmScrabble.tilecounter += 1
+
                 frmScrabble.arrpic(i).ImageLocation = path + arrbag(i).letter + ".jpg"
             Next
         End Sub
@@ -192,7 +205,7 @@
         Dim i As Integer
 
         dictnumitems = 1
-        path = "F:\Locker\Files\Projects\CP II\VB.NET\Scrabble\Scrabble Resources\dictionary.txt"
+        path = "D:\Locker\Files\Projects\CP II\VB.NET\Scrabble\Scrabble Resources\dictionary.txt"
 
         FileOpen(1, path, OpenMode.Input)
 
@@ -337,14 +350,8 @@
 
     Private Sub ReplaceTilesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ReplaceTilesToolStripMenuItem.Click
 
-        Dim path As String
-        path = "F:\Locker\Files\Projects\CP II\VB.NET\Scrabble\Tiles\"
-        For i = 1 To 7
-            If arrpic(i).Visible = False Then
-                arrpic(i).ImageLocation = path + b.arrbag(i + 7).letter + ".jpg"
-                arrpic(i).Visible = True
-            End If
-        Next
+        'replace()
+
     End Sub
     Sub sortwords()
         'declare pointer into the array
@@ -388,7 +395,7 @@
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         lblTime.Text = lblTime.Text - 1
-        If lblTime.Text = "0" Then
+        If lblTime.Text < "0" Then
             Timer1.Enabled = False
             Timer2.Enabled = True
             MsgBox("TIME IS UP!")
@@ -411,6 +418,10 @@
             If lblTime.Visible = False Then
                 lblTime.Visible = True
             End If
+
+    End Sub
+
+    Private Sub lblWord_Click(sender As Object, e As EventArgs) Handles lblWord.Click
 
     End Sub
 End Class
